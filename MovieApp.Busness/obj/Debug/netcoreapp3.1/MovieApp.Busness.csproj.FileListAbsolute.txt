@@ -1,0 +1,15 @@
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Busness.deps.json
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Busness.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Busness.pdb
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.csproj.AssemblyReference.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.GeneratedMSBuildEditorConfig.editorconfig
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.AssemblyInfoInputs.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.AssemblyInfo.cs
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.csproj.CoreCompileInputs.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.pdb
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Entity.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MoviewApp.data.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Entity.pdb
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MoviewApp.data.pdb
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Busness.csproj.CopyComplete

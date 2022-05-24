@@ -1,0 +1,10 @@
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\bin\Debug\netcoreapp3.1\MoviewApp.data.deps.json
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\bin\Debug\netcoreapp3.1\MoviewApp.data.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\bin\Debug\netcoreapp3.1\MoviewApp.data.pdb
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.csproj.AssemblyReference.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.AssemblyInfoInputs.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.AssemblyInfo.cs
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.csproj.CoreCompileInputs.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.dll
+C:\IKStraining\day2\myCode\MovieCoreApplication\MoviewApp.data\obj\Debug\netcoreapp3.1\MoviewApp.data.pdb

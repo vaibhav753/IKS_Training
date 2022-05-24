@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MovieApp.Busness/1.0.0": {
+        "dependencies": {
+          "MovieApp.Entity": "1.0.0",
+          "MoviewApp.data": "1.0.0"
+        },
+        "runtime": {
+          "MovieApp.Busness.dll": {}
+        }
+      },
+      "MovieApp.Entity/1.0.0": {
+        "runtime": {
+          "MovieApp.Entity.dll": {}
+        }
+      },
+      "MoviewApp.data/1.0.0": {
+        "runtime": {
+          "MoviewApp.data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MovieApp.Busness/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieApp.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MoviewApp.data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
