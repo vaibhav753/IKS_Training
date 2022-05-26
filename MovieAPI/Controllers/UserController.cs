@@ -18,19 +18,19 @@ namespace MovieAPI.Controllers
         {
             _userService = userService;
         }
-        [HttpGet("User")]
+        [HttpGet("SelectUser")]
         public IActionResult SelectUser()
         {
             return Ok(_userService.SelectUser());
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         public IActionResult Register(UserModel userModel)
         {
             return Ok(_userService.Register(userModel));
         }
 
-        [HttpPut]
+        [HttpPut("Update")]
         public IActionResult Update([FromBody] UserModel userModel )
         {
             _userService.Update(userModel);

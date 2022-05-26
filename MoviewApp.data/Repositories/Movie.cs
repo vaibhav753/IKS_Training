@@ -24,7 +24,9 @@ namespace MovieApp.Data.Repositories
 
         public void DeletMovie(int movieId)
         {
-            throw new NotImplementedException();
+            var movie = _movieDbContext.movieModel.Find(movieId);
+            _movieDbContext.movieModel.Remove(movie);
+            _movieDbContext.SaveChanges();
         }
 
         public MovieModel getMovieById(int movieId)
@@ -39,7 +41,8 @@ namespace MovieApp.Data.Repositories
 
         public void UpdateMovie(MovieModel movieModel)
         {
-            throw new NotImplementedException();
+            _movieDbContext.Entry(movieModel).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _movieDbContext.SaveChanges();
         }
     }
 }

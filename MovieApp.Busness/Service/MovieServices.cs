@@ -25,7 +25,7 @@ namespace MovieApp.Business.Service
 
         public void DeletMovie(int movieId)
         {
-            throw new NotImplementedException();
+            _movie.DeletMovie(movieId);
         }
 
         public MovieModel getMovieById(int movieId)
@@ -40,7 +40,7 @@ namespace MovieApp.Business.Service
 
         public void UpdateMovie(MovieModel movieModel)
         {
-            throw new NotImplementedException();
+            _movie.UpdateMovie(movieModel);
         }
     }
 }
