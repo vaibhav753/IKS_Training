@@ -19,14 +19,3 @@ namespace MovieApp.Data.DataConnection
     }
 }
 
-//public class MovieDbContext : DbContext
-//{
-//    public MovieDbContext(DbContextOptions<MovieDbContext> options) : base(options)
-//    {
-
-//    }
-//    public DbSet<Movie> movie { get; set; }
-
-//    public DbSet<MovieShowTimings> movieShowTimings { get; set; }
-//    public DbSet<UserInfo> userInfo { get; set; }
-//}
