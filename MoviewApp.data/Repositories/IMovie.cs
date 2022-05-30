@@ -11,7 +11,7 @@ namespace MovieApp.Data.Repositories
         public void UpdateMovie(MovieModel movieModel);
 
         public void DeletMovie(int movieId);
-        public MovieModel getMovieById(int movieId);
+        public object getMovieById(int movieId);
 
         IEnumerable<MovieModel> GetMovies();
     }

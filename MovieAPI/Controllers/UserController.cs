@@ -36,5 +36,17 @@ namespace MovieAPI.Controllers
             _userService.Update(userModel);
             return Ok("user updated successfully");
         }
+        [HttpDelete("DeleteUser")]
+        public IActionResult Delete(int userId)
+        {
+            _userService.Delete(userId);
+            return Ok(" user deleted successfully");
+        }
+
+        [HttpGet("SelectUserById")]
+        public IActionResult SelectUserById(int userId)
+        {
+            return Ok(_userService.SelectUserById(userId));
+        }
     }
 }

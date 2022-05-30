@@ -1,24 +1,37 @@
 ﻿@model IEnumerable<MovieApp.Entity.UserModel>
-    @{
-    ViewData["Title"] = "ShowUserDetails";
-    }
+@{ ViewData["Title"] = "ShowUserDetails"; }
 
-    <h1>ShowUserDetails</h1>
-    <hr />
-    <form>
-        <table class="table table-striped">
-            <tr><td>Id</td> <td>FirstName</td> <td>LastName</td> <td>Email</td></tr>
-            @{
+<h1>ShowUserDetails</h1>
+<hr />
 
-            foreach(var item in Model)
-            {
-            <tr><td><input type="checkbox" /></td><td>@item.UserId</td><td>@item.FirstName </td><td>@item.LastName</td><td>@item.Email</td></tr>
+<a asp-controller="User" asp-action="SelectUser">show user details</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>@item.UserId</td>
+    <td>@item.FirstName </td>
+    <td>@item.LastName</td>
+    <td>@item.Email</td>
+    <td><a asp-controller="User" asp-action="Edit" asp-route-UserId=@item.UserId>edit</a></td>
+    <td><a asp-controller="User" asp-action="Delete" asp-route-UserId=@item.UserId>Delete</a></td>
+    
+</tr>
+}
+    </tbody>
 
 
-            }
+</table>
 
-            }
 
-        </table>
-
-    </form>

@@ -1,4 +1,6 @@
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.deps.json
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.runtimeconfig.json
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.runtimeconfig.dev.json
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.dll
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.pdb
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Data.dll
@@ -13,6 +15,4 @@ C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netco
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Business.csproj.CopyComplete
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Business.dll
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Business.pdb
-C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.runtimeconfig.json
-C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\bin\Debug\netcoreapp3.1\MovieApp.Business.runtimeconfig.dev.json
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.Busness\obj\Debug\netcoreapp3.1\MovieApp.Business.genruntimeconfig.cache

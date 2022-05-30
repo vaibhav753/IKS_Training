@@ -56,7 +56,7 @@ namespace MovieApp.UI.Controllers
             ViewBag.status = "";
             using(HttpClient client = new HttpClient())
             {
-                StringContent content = new StringContent(JsonConvert.SerializeObject(userModel), Encoding.UTF8, "application/jason");
+                StringContent content = new StringContent(JsonConvert.SerializeObject(userModel), Encoding.UTF8, "application/json");
                 string endPoint = _configuration["WebApiURL"] + "User/Register";
                 using(var response =await client.PostAsync(endPoint, content))
                 {
@@ -76,7 +76,58 @@ namespace MovieApp.UI.Controllers
             return View();
 
 
+        }
+        [HttpGet]
+        public async Task<IActionResult> Edit(int userId)
+        {
+            //Fetch API,AxiosApi,HttpClient
+            //Http Verbs: GET,POST,DELETE..
+            //Http Req/response
+            using (HttpClient client = new HttpClient())
+            {
+                string endPoint = _configuration["WebApiURL"] + "User/SelectUserById?userId=" + userId;
+                using (var response = await client.GetAsync(endPoint))
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        var result = await response.Content.ReadAsStringAsync();
+                        var userModel = JsonConvert.DeserializeObject<UserModel>(result);
+                        return View(userModel);
+                    }
+                }
+            }
+
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(UserModel userModel)
+        {
+            ViewBag.status = "";
+
+            using (HttpClient client = new HttpClient())
+            {
+                StringContent content = new StringContent(JsonConvert.SerializeObject(userModel), Encoding.UTF8, "application/json");
+                string endPoint = _configuration["WebApiURL"] + "User/Update";
+                using (var response = await client.PostAsync(endPoint, content))
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        ViewBag.status = "ok";
+                        ViewBag.message = "Register successfully";
+                        return RedirectToAction("SelectUser", "User");
+                    }
+                    else
+                    {
+                        ViewBag.status = "Error";
+                        ViewBag.message = "wrong entites";
+                    }
+                }
+
+            }
+            return View();
+
 
         }
+
     }
 }

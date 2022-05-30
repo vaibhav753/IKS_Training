@@ -34,19 +34,25 @@ namespace MovieAPI.Controllers
             return  _movieService.GetMovies();
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("DeleteMovie")]
         public IActionResult DeleteMovie(int movieId)
         {
             _movieService.DeletMovie(movieId);
             return Ok("Movie deleted successfully");
         }
 
-        [HttpPut("Update")]
+        [HttpPut("UpdateMovie")]
 
         public IActionResult UpdateMovie(MovieModel movieModel)
         {
             _movieService.UpdateMovie(movieModel);
             return Ok("Movie updated successfully");
+        }
+        [HttpGet("getMovieById")]
+        public IActionResult getMovieById(int movieId)
+        {
+            _movieService.getMovieById(movieId);
+            return Ok("movie by Id display successfully");
         }
     }
 }

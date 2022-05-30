@@ -1,0 +1,44 @@
+﻿@model MovieApp.Entity.MovieModel
+@{
+    ViewData["Title"] = "RegisterMovie";
+}
+
+<a asp-action="GetMovies" asp-controller="Movie">Movie Deatils</a>
+<h1>AddMovie</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="TheatreName">MovieName</label>
+        <input type="text" class="form-control" asp-for="MovieName" />
+    </div>
+    <div class="form-group">
+        <label for="DirectorName">Movie Description</label>
+        <input type="text" class="form-control" asp-for="MovieDescription" />
+    </div>
+    <div class="form-group">
+        <label for="ActorName">Movie Type</label>
+        <input type="text" class="form-control" asp-for="MovieType" />
+    </div>
+    <div class="form-group">
+        <label for="ActressName">Movie Language</label>
+        <input type="text" class="form-control" asp-for="MovieLanguage" />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Add Movie">
+    <button type="button" class="btn btn-secondary">Reset</button>
+    <hr />
+    @if (ViewBag.status == "Ok")
+    {
+        <div class="alert alert-success">
+            @ViewBag.message
+        </div>
+    }
+    else if (ViewBag.status == "Error")
+    {
+        <div class="alert alert-danger">
+            @ViewBag.message
+        </div>
+    }
+
+</form>
+

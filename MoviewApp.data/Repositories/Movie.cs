@@ -29,9 +29,17 @@ namespace MovieApp.Data.Repositories
             _movieDbContext.SaveChanges();
         }
 
-        public MovieModel getMovieById(int movieId)
+        public object getMovieById(int movieId)
         {
-            throw new NotImplementedException();
+            var findmovie = _movieDbContext.movieModel.Find(movieId);
+            if (findmovie != null)
+            {
+                return findmovie;
+            }
+            else
+            {
+                return "movie not found ";
+            }
         }
 
         public IEnumerable<MovieModel> GetMovies()

@@ -28,8 +28,22 @@ namespace MovieApp.Business.Service
 
         public string Update(UserModel usermodel)
         {
-            return _iuser.Update(usermodel);
+            _iuser.Update(usermodel);
+            return "update successfull";
+        }
+        public string Delete(int userId)
+        {
+             _iuser.Delete(userId);
+            return "delete successfull";
+        }
+        public object Login(UserModel userModel)
+        {
+            return _iuser.Login(userModel);
         }
 
+        public object SelectUserById(int userId)
+        {
+            return _iuser.SelectUserById(userId);
+        }
     }
 }

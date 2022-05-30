@@ -15,14 +15,30 @@ namespace MovieApp.Data.Repositories
         {
             _movieDbContext = movieDbContext;
         }
-        public string Delete()
+        public string Delete(int userId)
         {
-            throw new NotImplementedException();
+            var user = _movieDbContext.userModel.Find(userId);
+            if(user== null)
+            {
+                return "";
+            }
+            else
+            {
+                _movieDbContext.userModel.Remove(user);
+                _movieDbContext.SaveChanges();
+                return " deleted";
+            }
+                
         }
 
-        public object Login()
+        public object Login(UserModel userModel)
         {
-            throw new NotImplementedException();
+            UserModel userData = null;
+            var user = _movieDbContext.userModel.Where(u => u.Email == userModel.Email && u.Password == userModel.Password).ToList();
+            if (user.Count > 0)
+                userData = user[0];
+            return userData;
+
         }
 
         public string Register(UserModel userModel)
@@ -43,6 +59,11 @@ namespace MovieApp.Data.Repositories
         {
             List<UserModel> userList = _movieDbContext.userModel.ToList();
             return userList;
+        }
+
+        public object SelectUserById(int userId)
+        {
+            return _movieDbContext.userModel.Find(userId);
         }
 
         public string Update(UserModel usermodel)

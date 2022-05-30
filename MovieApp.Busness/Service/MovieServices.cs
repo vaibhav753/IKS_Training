@@ -28,9 +28,9 @@ namespace MovieApp.Business.Service
             _movie.DeletMovie(movieId);
         }
 
-        public MovieModel getMovieById(int movieId)
+        public object getMovieById(int movieId)
         {
-            throw new NotImplementedException();
+           return _movie.getMovieById(movieId);
         }
 
         public IEnumerable<MovieModel> GetMovies()

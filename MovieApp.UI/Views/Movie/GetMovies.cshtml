@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MovieApp.Entity.MovieModel>
+@{
+    ViewData["Title"] = "GetMovies";
+}
+
+<h1>SelectMovies</h1>
+
+<form>
+    <table class=" table table-striped">
+        <tr>
+            <td>ID</td>
+            <td>Movie name</td>
+            <td>Movie Description</td>
+            <td>Movie type</td>
+            <td>movie language</td>
+            <td> edit</td>
+            <td>delete</td>
+        </tr>
+
+        @{ 
+            foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.MovieId</td>
+                    <td>@item.MovieName</td>
+                    <td>@item.MovieDescription</td>
+                    <td>@item.MovieType</td>
+                    <td>@item.MovieLanguage</td>
+                    <td><a asp-action="UpdateMovie" asp-controller="Movie" asp-route-MovieId=@item.MovieId>Edit </a></td>
+                    <td><a asp-action="DeleteMovie" asp-controller="Movie" asp-route-MovieId=@item.MovieId> Delete </a></td>
+                </tr>
+            }
+        }
+
+    </table>
+</form>
