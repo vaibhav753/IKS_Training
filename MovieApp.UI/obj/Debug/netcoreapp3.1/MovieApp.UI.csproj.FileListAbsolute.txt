@@ -173,3 +173,6 @@ C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\MovieApp.UI.dll
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\MovieApp.UI.pdb
 C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\MovieApp.UI.genruntimeconfig.cache
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\AddTheatre.cshtml.g.cs
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\DeleteTheatreById.cshtml.g.cs
+C:\IKStraining\day2\myCode\MovieCoreApplication\MovieApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Theatre\EditTheatreById.cshtml.g.cs

@@ -1,0 +1,38 @@
+﻿@model MovieApp.Entity.TheatreModel
+@{
+    ViewData["Title"] = "EditTheatreById";
+}
+
+<h1>EditTheatreById</h1>
+
+<a asp-action="ShowTheatreDetails">Show Theatres</a>
+<form method="post">
+    <div class="form-group">
+        <label class="form-label">Threatre Name</label>
+        <input type="text" class="form-control" asp-for="ThreatreName">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Threatre PlayName</label>
+        <input type="text" class="form-control" asp-for="ThreatrePlayName">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Thetre Capacity</label>
+        <input type="email" class="form-control" asp-for="ThreatreCapacity">
+    </div>
+    <button type="submit" class="btn btn-primary" value="Update">Update Theatre</button>"
+    <button type="reset" class="btn btn-secondary">Clear Form</button>
+    <hr />
+
+    @if (ViewBag.status == "Success")
+    {
+        <div class="alert alert-success">
+            @ViewBag.message
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            @ViewBag.message
+        </div>
+    }
+</form>
