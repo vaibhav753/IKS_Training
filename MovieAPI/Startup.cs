@@ -32,11 +32,15 @@ namespace MovieAPI
         public void ConfigureServices(IServiceCollection services)
         {
             string sqlConnection = Configuration.GetConnectionString("SqlConnection");
-            services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(sqlConnection));
+            services.AddDbContext<CoreDbContext>(options => options.UseSqlServer(sqlConnection));
             services.AddTransient<IUser, User>();
             services.AddTransient<IMovie, Movie>();
+            services.AddTransient<ITheatre, Theatre>();
             services.AddTransient<UserService, UserService>();
             services.AddTransient<MovieServices, MovieServices>();
+            services.AddTransient<TheatreService, TheatreService>();
+
+
             services.AddControllers();
             //services.AddSwaggerGen();
             services.AddSwaggerGen(c =>

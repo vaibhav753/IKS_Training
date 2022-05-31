@@ -8,11 +8,11 @@ using System.Text;
 
 namespace MovieApp.Data.Repositories
 {
-    class Theatre : ITheatre
+    public class Theatre : ITheatre
     {
-        MovieDbContext _movieDbContext;
+        CoreDbContext _movieDbContext;
 
-        public Theatre(MovieDbContext movieDbContext)
+        public Theatre(CoreDbContext movieDbContext)
         {
             _movieDbContext = movieDbContext;
         }

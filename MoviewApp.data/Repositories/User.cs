@@ -10,8 +10,8 @@ namespace MovieApp.Data.Repositories
 {
     public class User : IUser
     {
-        MovieDbContext _movieDbContext;
-        public User(MovieDbContext movieDbContext)
+        CoreDbContext _movieDbContext;
+        public User(CoreDbContext movieDbContext)
         {
             _movieDbContext = movieDbContext;
         }

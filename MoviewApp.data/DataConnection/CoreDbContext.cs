@@ -7,9 +7,9 @@ using MovieApp.Entity;
 
 namespace MovieApp.Data.DataConnection
 {
-    public class MovieDbContext : DbContext
+    public class CoreDbContext : DbContext
     {
-        public MovieDbContext(DbContextOptions<MovieDbContext> options):base(options)
+        public CoreDbContext(DbContextOptions<CoreDbContext> options):base(options)
         {
 
         }

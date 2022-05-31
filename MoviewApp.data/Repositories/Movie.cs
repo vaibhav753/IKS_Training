@@ -9,9 +9,9 @@ namespace MovieApp.Data.Repositories
 {
    public  class Movie : IMovie
     {
-        MovieDbContext _movieDbContext;
+        CoreDbContext _movieDbContext;
 
-        public Movie(MovieDbContext movieDbContext)
+        public Movie(CoreDbContext movieDbContext)
         {
             _movieDbContext = movieDbContext;
         }

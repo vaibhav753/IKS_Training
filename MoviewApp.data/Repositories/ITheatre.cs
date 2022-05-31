@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MovieApp.Data.Repositories
 {
-    interface ITheatre
+   public interface ITheatre
     {
         string Register(TheatreModel theatreModel);
 
