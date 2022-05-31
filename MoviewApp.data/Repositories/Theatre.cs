@@ -10,9 +10,9 @@ namespace MovieApp.Data.Repositories
 {
     public class Theatre : ITheatre
     {
-        CoreDbContext _movieDbContext;
+        MovieDbContext _movieDbContext;
 
-        public Theatre(CoreDbContext movieDbContext)
+        public Theatre(MovieDbContext movieDbContext)
         {
             _movieDbContext = movieDbContext;
         }

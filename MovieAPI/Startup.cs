@@ -32,7 +32,7 @@ namespace MovieAPI
         public void ConfigureServices(IServiceCollection services)
         {
             string sqlConnection = Configuration.GetConnectionString("SqlConnection");
-            services.AddDbContext<CoreDbContext>(options => options.UseSqlServer(sqlConnection));
+            services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(sqlConnection));
             services.AddTransient<IUser, User>();
             services.AddTransient<IMovie, Movie>();
             services.AddTransient<ITheatre, Theatre>();

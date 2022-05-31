@@ -7,9 +7,9 @@ using MovieApp.Entity;
 
 namespace MovieApp.Data.DataConnection
 {
-    public class CoreDbContext : DbContext
+    public class MovieDbContext : DbContext
     {
-        public CoreDbContext(DbContextOptions<CoreDbContext> options):base(options)
+        public MovieDbContext(DbContextOptions<MovieDbContext> options):base(options)
         {
 
         }
@@ -17,6 +17,7 @@ namespace MovieApp.Data.DataConnection
         public DbSet<MovieModel> movieModel { get; set; }
 
         public DbSet<TheatreModel> theatreModel { get; set; }
+        public DbSet<MovieShowTime> MovieTime { get; set; }
 
     }
 }
